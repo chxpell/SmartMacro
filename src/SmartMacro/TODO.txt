@@ -1,0 +1,27 @@
+TODO LIST
+
+- Open Script / Save Script buttons
+    - Add functionality
+
+- Double click script item to change its properties
+    - Non-click functions allow for setting of x and y coordinate
+
+- Drag Script Item away to delete it
+
+- Highlight multiple script items to drag / delete them
+
+- Settings window
+    - Add action key shortcut
+    - Start/stop shortcut
+    - Theme?
+    - Default delay time
+    - Default repeat time
+    - Default coordinates when left blank
+    - Default combobox action
+
+- Help window
+    - What smart macro is
+    - How to use the settings
+    - How to add actions
+    - What the columns mean
+    - How to use wait for pixel

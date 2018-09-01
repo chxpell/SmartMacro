@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<BorderPane fx:id="MainView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1000.0" minWidth="1800.0" prefHeight="1000.0" prefWidth="1800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SmartMacro.FXMLDocumentController">
+   <left>
+      <VBox fx:id="menuBox" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #373e48;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="spacerPane" disable="true" prefHeight="200.0" prefWidth="200.0" />
+            <RadioButton id="scriptButton" fx:id="scriptButton" mnemonicParsing="false" onAction="#scriptClick" prefHeight="75.0" prefWidth="300.0" selected="true" stylesheets="@../Resources/Style1.css" text="Script" textFill="#e5e5e5">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="group3" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton id="settingsButton" fx:id="settingsButton" mnemonicParsing="false" onAction="#settingsClick" prefHeight="75.0" prefWidth="300.0" stylesheets="@../Resources/Style1.css" text="Settings" textFill="#e5e5e5" toggleGroup="$group3">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton id="helpButton" fx:id="helpButton" mnemonicParsing="false" onAction="#helpClick" prefHeight="75.0" prefWidth="300.0" stylesheets="@../Resources/Style1.css" text="Help" textFill="#e5e5e5" toggleGroup="$group3">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox fx:id="horizontalBox" prefHeight="100.0" prefWidth="1800.0" style="-fx-background-color: #2a2e37;">
+         <children>
+            <AnchorPane fx:id="topAnchorPane" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #20d6d0;">
+               <children>
+                  <Label fx:id="logo" layoutX="-2.0" layoutY="-1.0" prefHeight="97.0" prefWidth="297.0" text="   SMART MACRO" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label prefHeight="18.0" prefWidth="1032.0" text=" " />
+            <Button id="openButton" fx:id="openButton" mnemonicParsing="false" prefHeight="103.0" prefWidth="214.0" stylesheets="@../Resources/Style1.css" text="Open" textFill="#dfdfdf">
+               <font>
+                  <Font name="Segoe UI Light" size="27.0" />
+               </font>
+            </Button>
+            <Button id="saveButton" fx:id="saveButton" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" stylesheets="@../Resources/Style1.css" text="Save" textFill="#dfdfdf">
+               <font>
+                  <Font name="Segoe UI Light" size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <StackPane fx:id="sp" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="helpPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2a2e37;">
+               <children>
+                  <WebView fx:id="helpWebView" layoutX="1.0" prefHeight="899.0" prefWidth="1499.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="settingsPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="settingslabel" text="settings" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="175.0" layoutY="139.0" prefHeight="55.0" prefWidth="264.0" text="Add Action Shortcut:">
+                     <font>
+                        <Font name="Segoe UI Light" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="startStopField" layoutX="459.0" layoutY="208.0" prefHeight="26.0" prefWidth="116.0" text="F7" />
+                  <Button id="setButton" fx:id="setButton" layoutX="599.0" layoutY="150.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="67.0" stylesheets="@../Resources/Style1.css" text="SET" />
+                  <Label layoutX="185.0" layoutY="194.0" prefHeight="55.0" prefWidth="264.0" text="Start/Stop Shortcut:">
+                     <font>
+                        <Font name="Segoe UI Light" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="keyField1" layoutX="456.0" layoutY="164.0" prefHeight="26.0" prefWidth="116.0" text="F6" />
+                  <Button id="setButton" fx:id="setButton1" layoutX="600.0" layoutY="198.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="67.0" stylesheets="@../Resources/Style1.css" text="SET" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="scriptPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f1f1f1;">
+               <children>
+                  <BorderPane layoutX="370.0" layoutY="3.0" prefHeight="897.0" prefWidth="1128.0" style="-fx-background-color: #f1f1f1;" AnchorPane.bottomAnchor="0.1999999999999318" AnchorPane.leftAnchor="370.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.2000000000000455">
+                     <center>
+                        <TableView id="scriptView" fx:id="scriptView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                          <columns>
+                            <TableColumn id="numberCol" fx:id="numCol" prefWidth="75.0" resizable="false" sortable="false" text="  #" />
+                            <TableColumn id="actionCol" fx:id="actionCol" prefWidth="131.7333984375" resizable="false" sortable="false" text="  Action" />
+                              <TableColumn id="xCol" prefWidth="84.2664794921875" resizable="false" sortable="false" text="  X" fx:id="xCol" />
+                              <TableColumn id="yCol" fx:id="yCol" prefWidth="77.599853515625" resizable="false" sortable="false" text="  Y" />
+                              <TableColumn id="delayCol" fx:id="delayCol" prefWidth="103.7333984375" resizable="false" sortable="false" text="  Delay (ms)" />
+                              <TableColumn id="repeatCol" fx:id="repeatCol" minWidth="9.0665283203125" prefWidth="92.8001708984375" resizable="false" sortable="false" text="  Repeat" />
+                              <TableColumn id="noteCol" fx:id="noteCol" minWidth="9.0665283203125" prefWidth="329.86669921875" resizable="false" sortable="false" text="  Note" />
+                          </columns>
+                           <stylesheets>
+                              <URL value="@../Resources/Style1.css" />
+                              <URL value="@../Resources/ComboBoxStyle.css" />
+                           </stylesheets>
+                        </TableView>
+                     </center>
+                     <top>
+                        <Label prefHeight="50.0" prefWidth="154.0" BorderPane.alignment="CENTER" />
+                     </top>
+                     <left>
+                        <Label prefHeight="44.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+                     </left>
+                     <bottom>
+                        <Label prefHeight="39.0" prefWidth="66.0" BorderPane.alignment="CENTER" />
+                     </bottom>
+                     <right>
+                        <Label prefHeight="50.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+                     </right>
+                  </BorderPane>
+                  <HBox layoutX="31.0" layoutY="409.0" prefHeight="107.0" prefWidth="379.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="7.0" text=" " />
+                        <Button id="addButton" fx:id="addButton" mnemonicParsing="false" onAction="#addActionHelper" prefHeight="107.0" prefWidth="156.0" stylesheets="@../Resources/Style1.css" text="Add">
+                           <font>
+                              <Font name="Segoe UI Light" size="21.0" />
+                           </font>
+                        </Button>
+                        <Label prefHeight="18.0" prefWidth="83.0" text=" " />
+                        <Button id="removeButton" fx:id="removeButton" mnemonicParsing="false" onAction="#removeClick" prefHeight="107.0" prefWidth="155.0" stylesheets="@../Resources/Style1.css" text="Remove">
+                           <font>
+                              <Font name="Segoe UI Light" size="21.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="60.0" layoutY="758.0" prefHeight="101.0" prefWidth="340.0">
+                     <children>
+                        <ToggleButton id="startStopButton" fx:id="startStopButton" mnemonicParsing="false" onAction="#startStopClick" prefHeight="110.0" prefWidth="342.0" stylesheets="@../Resources/Style1.css" text="      START">
+                           <font>
+                              <Font name="Segoe UI Light" size="32.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="group2" />
+                           </toggleGroup>
+                        </ToggleButton>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="37.0" layoutY="582.0" prefHeight="100.0" prefWidth="371.0">
+                     <children>
+                        <Button id="positionButton" fx:id="positionButton" mnemonicParsing="false" onAction="#getMousePosition" prefHeight="100.0" prefWidth="144.0" stylesheets="@../Resources/Style1.css" text="Get Position">
+                           <font>
+                              <Font name="Segoe UI Light" size="21.0" />
+                           </font>
+                        </Button>
+                        <Label prefHeight="18.0" prefWidth="76.0" text=" " />
+                        <Button id="clearButton" fx:id="clearButton" mnemonicParsing="false" onAction="#clearClick" prefHeight="107.0" prefWidth="155.0" stylesheets="@../Resources/Style1.css" text="Clear">
+                           <font>
+                              <Font name="Segoe UI Light" size="21.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <AnchorPane id="actionPane" layoutX="32.0" layoutY="53.0" prefHeight="335.0" prefWidth="376.0" stylesheets="@Style1.css">
+                     <children>
+                        <VBox layoutX="-1.0" layoutY="-2.0" prefHeight="333.0" prefWidth="373.0">
+                           <children>
+                              <HBox prefHeight="60.0" prefWidth="374.0">
+                                 <children>
+                                    <Label prefHeight="64.0" prefWidth="174.0" text="  Actions">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="32.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="60.0" prefWidth="374.0">
+                                 <children>
+                                    <Label prefHeight="37.0" prefWidth="90.0" text="       Action">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox id="actionBox" fx:id="actionBox" prefHeight="34.0" prefWidth="263.0">
+                                       <stylesheets>
+                                          <URL value="@../Resources/ComboBoxStyle.css" />
+                                          <URL value="@../Resources/Style1.css" />
+                                       </stylesheets>
+                                    </ComboBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="55.0" prefWidth="374.0">
+                                 <children>
+                                    <Label prefHeight="35.0" prefWidth="111.0" text="       X-Coord">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField id="xBox" prefHeight="27.0" prefWidth="80.0" stylesheets="@Style1.css" fx:id="xBox" />
+                                    <Label prefHeight="31.0" prefWidth="78.0" text="   Y-Coord">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField id="yBox" fx:id="yBox" prefHeight="27.0" prefWidth="85.0" stylesheets="@Style1.css" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="43.0" prefWidth="374.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="110.0" text="       Delay (ms)">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField id="delayBox" fx:id="delayBox" prefHeight="27.0" prefWidth="83.0" stylesheets="@Style1.css" text="100" />
+                                    <Label prefHeight="26.0" prefWidth="74.0" text="   Repeat">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField id="delayBox" fx:id="repeatBox" prefHeight="27.0" prefWidth="89.0" stylesheets="@Style1.css" text="1" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="103.0" prefWidth="374.0">
+                                 <children>
+                                    <Label prefHeight="85.0" prefWidth="25.0" text=" " />
+                                    <TextArea id="noteBox" fx:id="noteBox" prefHeight="75.0" prefWidth="328.0" promptText="Enter note here. . .">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="18.0" />
+                                       </font>
+                                       <stylesheets>
+                                          <URL value="@../Resources/Style1.css" />
+                                          <URL value="@../Resources/ComboBoxStyle.css" />
+                                       </stylesheets>
+                                    </TextArea>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

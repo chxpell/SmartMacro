@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 20, 2018, 9:48:24 PM
+    Author     : connorschwing
+*/
+
+h1.main {
+    padding: 0;
+    margin:0;
+    font-family:Segoe UI Light; 
+    font-size:54px;    
+}
+
+h2.sub {
+    font-family:Segoe UI Light; 
+    font-size:24px;
+}
+
+h2.scriptSection {
+    font-family:Segoe UI Light; 
+    font-size:36px;
+    margin:0;
+    padding:0;
+}
+
+p.scriptDescription {
+    font-family:Segoe UI;
+    font-size: 20px;
+}
+
+ul.actionPaneItems {
+    font-family: Segoe UI;
+}

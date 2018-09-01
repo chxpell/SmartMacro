@@ -1,0 +1,328 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 17, 2018, 5:56:49 PM
+    Author     : connorschwing
+*/
+
+/*
+Set settings button to selected, others to transparent */
+#scriptButton{
+    -fx-background-color:transparent;
+}
+
+#settingsButton{
+    -fx-background-color:transparent;
+}
+
+#openButton{
+    -fx-background-color: transparent;
+}
+
+#saveButton{
+    -fx-background-color:transparent;
+}
+
+#helpButton{
+    -fx-background-color:transparent;
+}
+
+#scriptView {
+    -fx-background-color: white;
+    -fx-border-color:#d4d4d4;   
+    -fx-effect: dropshadow(three-pass-box, #e8e8e8, 20, 0, 0, 0);
+}
+
+#scriptView .column-header .label {
+    -fx-font-family: "Segoe UI Light";
+    -fx-font-size:18px;   
+    -fx-alignment:CENTER_LEFT;
+   
+}
+
+#scriptView .table-cell{
+    -fx-font-family: "Segoe UI Light";
+    -fx-font-size:16px;  
+    -fx-alignment:CENTER_LEFT;
+  
+}
+
+#actionPane {
+    -fx-background-color: white;
+    -fx-border-color:#d4d4d4;
+    -fx-effect: dropshadow(three-pass-box, #e7e7e7, 20, 0, 0, 0);
+}
+
+#addButton {
+    -fx-border-color:#d4d4d4;
+    -fx-background-color:white;
+    -fx-background-image: url("addIcon.png");
+    -fx-background-size: 60px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 50% 65%;
+    -fx-alignment: TOP_LEFT;
+    -fx-effect: dropshadow(three-pass-box, #e7e7e7, 15, 0, 0, 0);
+}
+
+#addButton:pressed{
+    -fx-background-color:d4d4d4;
+}
+#positionButton:pressed{
+    -fx-background-color:d4d4d4;
+}
+
+#addButton:hover {
+    -fx-background-color:#f3f3f3;
+}
+#setButton:hover {
+    -fx-background-color:#f3f3f3;
+}
+#removeButton:hover {
+    -fx-background-color:#f3f3f3;
+}
+#clearButton:hover {
+    -fx-background-color:#f3f3f3;
+}
+#positionButton:hover {
+    -fx-background-color:#f3f3f3;
+}
+
+#startStopButton {
+    -fx-border-color:#d4d4d4;
+    -fx-background-color:#85eca5;
+    -fx-background-image: url("startButton.png");
+    -fx-background-size: 50px;
+    -fx-background-repeat: no-repeat;  
+    -fx-background-position: 80% 50%;
+    -fx-alignment: CENTER_LEFT; 
+    -fx-effect: dropshadow(three-pass-box, #e7e7e7, 15, 0, 0, 0);
+}
+#startStopButton.toggle-button {
+    base-color: #85eca5;
+    -fx-background-color: base-color;
+}
+
+#startStopButton.toggle-button:selected {
+    base-color: #ff6060;
+    -fx-background-image: url("stopButton.png");
+    -fx-background-size: 40px;
+    -fx-background-repeat: no-repeat;  
+    -fx-background-position: 80% 50%;
+    -fx-alignment: CENTER_LEFT; 
+}
+
+#startStopButton.toggle-button:hover {
+    -fx-background-color: derive(base-color, -20%);
+}
+
+#removeButton {
+    -fx-border-color:#d4d4d4;
+    -fx-background-color:white;
+    -fx-background-image: url("removeIcon.png");
+    -fx-background-size: 60px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 50% 65%;
+    -fx-alignment: TOP_LEFT;
+    -fx-effect: dropshadow(three-pass-box, #e7e7e7, 15, 0, 0, 0);
+}
+
+#removeButton:pressed{
+    -fx-background-color:#d4d4d4;
+}
+
+#saveButton:hover {
+    -fx-scale-y: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-border-color: #1ed7d0 ;
+    -fx-border-width: 0px 0px 8px 0px;        
+
+}
+
+#openButton:hover {
+    -fx-scale-y: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-border-color: #1ed7d0 ;
+    -fx-border-width: 0px 0px 8px 0px; 
+}
+
+#clearButton {
+    -fx-border-color:#d4d4d4;
+    -fx-background-color:white;
+    -fx-background-image: url("clearButton.png");
+    -fx-background-size: 60px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 50% 65%;
+    -fx-alignment: TOP_LEFT;
+    -fx-effect: dropshadow(three-pass-box, #e7e7e7, 15, 0, 0, 0);
+}
+
+#positionButton {
+    -fx-border-color:#d4d4d4;
+    -fx-background-color:white;
+    -fx-background-image: url("crosshairIcon.png");
+    -fx-background-size: 75px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 50% 90%;
+    -fx-alignment: TOP_LEFT;
+    -fx-effect: dropshadow(three-pass-box, #e7e7e7, 15, 0, 0, 0);
+}
+
+#clearButton:pressed{
+    -fx-background-color:#d4d4d4;
+}
+
+#scriptView .column-header {
+    -fx-background-color:white;
+}
+
+#scriptView .filler {
+    -fx-background-color:white;
+}
+
+#setButton {
+    -fx-border-color:#d4d4d4;
+    -fx-background-color:white;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(three-pass-box, #e7e7e7, 15, 0, 0, 0);
+}
+
+#setButton:pressed{
+    -fx-background-color:d4d4d4;
+}
+
+#actionBox 
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-border-color:#d4d4d4;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-font-family:"Segoe UI Light";
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em; 
+}
+
+#xBox 
+{
+    -fx-border-color:#d4d4d4;
+}
+
+#yBox 
+{
+    -fx-border-color:#d4d4d4;
+}
+
+#delayBox 
+{
+    -fx-border-color:#d4d4d4;
+}
+
+#noteBox 
+{
+    -fx-border-color:#d4d4d4;
+}
+
+
+
+
+
+#scriptButton > .radio {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-background-radius: 0px;
+  -fx-padding: 0.0em; /* 4 8 4 8 */
+}
+
+#scriptButton:selected > .radio > .dot {
+  -fx-background-color: transparent;
+}
+
+#scriptButton:selected {
+    -fx-background-color:#4a525f;
+    -fx-scale-y: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-border-color: #1ed7d0 ;
+    -fx-border-width: 0px 0px 0px 5px; 
+}
+#scriptButton:selected:focused {
+    -fx-background-color:#4a525f;
+    -fx-scale-y: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-border-color: #1ed7d0 ;
+    -fx-border-width: 0px 0px 0px 5px; 
+}
+#scriptButton:hover {
+    -fx-background-color:#4a525f;
+    -fx-scale-y: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-border-color: #1ed7d0 ;
+    -fx-border-width: 0px 0px 0px 5px;        
+
+}
+
+#settingsButton > .radio {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-background-radius: 0px;
+  -fx-padding: 0.0em; /* 4 8 4 8 */
+}
+#settingsButton:selected > .radio > .dot {
+  -fx-background-color: transparent;
+}
+#settingsButton:selected {
+    -fx-background-color:#4a525f;
+    -fx-scale-y: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-border-color: #1ed7d0 ;
+    -fx-border-width: 0px 0px 0px 5px; 
+}
+#settingsButton:selected:focused {
+    -fx-background-color:#4a525f;
+    -fx-scale-y: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-border-color: #1ed7d0 ;
+    -fx-border-width: 0px 0px 0px 5px; 
+}
+#settingsButton:hover {
+    -fx-background-color:#4a525f;
+    -fx-scale-y: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-border-color: #1ed7d0 ;
+    -fx-border-width: 0px 0px 0px 5px;        
+
+}
+
+
+#helpButton > .radio {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-background-radius: 0px;
+  -fx-padding: 0.0em; /* 4 8 4 8 */
+}
+#helpButton:selected > .radio > .dot {
+  -fx-background-color: transparent;
+}
+#helpButton:selected {
+    -fx-background-color:#4a525f;
+    -fx-scale-y: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-border-color: #1ed7d0 ;
+    -fx-border-width: 0px 0px 0px 5px; 
+}
+#helpButton:selected:focused {
+    -fx-background-color:#4a525f;
+    -fx-scale-y: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-border-color: #1ed7d0 ;
+    -fx-border-width: 0px 0px 0px 5px; 
+}
+#helpButton:hover {
+    -fx-background-color:#4a525f;
+    -fx-scale-y: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-border-color: #1ed7d0 ;
+    -fx-border-width: 0px 0px 0px 5px;        
+
+}

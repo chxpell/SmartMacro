@@ -1,0 +1,147 @@
+/*
+    This sheet contains scroll bar styles for the script window, the note box, and the action drop down box
+*/
+/* 
+    Created on : Aug 19, 2018, 1:01:21 AM
+    Author     : connorschwing
+*/
+
+#actionBox .scroll-bar:horizontal ,
+#actionBox  .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+#actionBox .increment-button ,#actionBox .decrement-button {
+    -fx-background-color:transparent;
+	-fx-border-color:derive(gray,80%);
+}
+
+#actionBox .scroll-bar:horizontal .track ,
+#actionBox .scroll-bar:vertical .track{
+     -fx-background-color: transparent;
+	 -fx-border-color:derive(gray,80%);
+	 -fx-background-radius: 0em;
+}
+
+#actionBox .scroll-bar:horizontal .thumb,
+#actionBox .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(gray, 30%);
+	-fx-background-insets: 0, 0, 0;
+	-fx-background-radius: 0em;
+
+}
+
+#actionBox .scroll-bar:horizontal:hover .track ,
+#actionBox .scroll-bar:horizontal:pressed .track ,
+#actionBox .scroll-bar:vertical:hover .track,
+#actionBox .scroll-bar:vertical:pressed .track{
+     -fx-background-color: derive(#434343,20%);
+
+	 -fx-opacity: 0.2;
+	 -fx-background-radius: 0em;
+
+}
+
+#actionBox .scroll-bar .thumb:hover,
+#actionBox .scroll-bar .thumb:pressed{
+    -fx-background-color: derive(black,80%);
+}
+
+#actionBox .increment-button:hover ,#actionBox .decrement-button:hover {
+    -fx-background-color:derive(gray,80%);
+	-fx-border-color:derive(gray,20%);	
+	
+}
+#scriptView .scroll-bar:horizontal ,
+#scriptView  .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+#scriptView .increment-button ,#scriptView .decrement-button {
+    -fx-background-color:transparent;
+	-fx-border-color:derive(gray,80%);
+}
+
+#scriptView .scroll-bar:horizontal .track ,
+#scriptView .scroll-bar:vertical .track{
+     -fx-background-color: transparent;
+	 -fx-border-color:derive(gray,80%);
+	 -fx-background-radius: 0em;
+}
+
+#scriptView .scroll-bar:horizontal .thumb,
+#scriptView .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(gray, 30%);
+	-fx-background-insets: 0, 0, 0;
+	-fx-background-radius: 0em;
+
+}
+
+#scriptView .scroll-bar:horizontal:hover .track ,
+#scriptView .scroll-bar:horizontal:pressed .track ,
+#scriptView .scroll-bar:vertical:hover .track,
+#scriptView .scroll-bar:vertical:pressed .track{
+     -fx-background-color: derive(#434343,20%);
+
+	 -fx-opacity: 0.2;
+	 -fx-background-radius: 0em;
+
+}
+
+#scriptView .scroll-bar .thumb:hover,
+#scriptView .scroll-bar .thumb:pressed{
+    -fx-background-color: derive(black,80%);
+}
+
+#scriptView .increment-button:hover ,#scriptView .decrement-button:hover {
+    -fx-background-color:derive(gray,80%);
+	-fx-border-color:derive(gray,20%);	
+	
+}
+
+#noteBox .scroll-bar:horizontal ,
+#noteBox  .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+#noteBox .increment-button ,#noteBox .decrement-button {
+    -fx-background-color:transparent;
+	-fx-border-color:derive(gray,80%);
+}
+
+#noteBox .scroll-bar:horizontal .track ,
+#noteBox .scroll-bar:vertical .track{
+     -fx-background-color: transparent;
+	 -fx-border-color:derive(gray,80%);
+	 -fx-background-radius: 0em;
+}
+
+#noteBox .scroll-bar:horizontal .thumb,
+#noteBox .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(gray, 30%);
+	-fx-background-insets: 0, 0, 0;
+	-fx-background-radius: 0em;
+
+}
+
+#noteBox .scroll-bar:horizontal:hover .track ,
+#noteBox .scroll-bar:horizontal:pressed .track ,
+#noteBox .scroll-bar:vertical:hover .track,
+#noteBox .scroll-bar:vertical:pressed .track{
+     -fx-background-color: derive(#434343,20%);
+
+	 -fx-opacity: 0.2;
+	 -fx-background-radius: 0em;
+
+}
+
+#noteBox .scroll-bar .thumb:hover,
+#noteBox .scroll-bar .thumb:pressed{
+    -fx-background-color: derive(black,80%);
+}
+
+#noteBox .increment-button:hover ,#noteBox .decrement-button:hover {
+    -fx-background-color:derive(gray,80%);
+	-fx-border-color:derive(gray,20%);	
+	
+}
