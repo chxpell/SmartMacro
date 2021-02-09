@@ -40,6 +40,8 @@ public class SmartMacro extends Application {
         int temp = 1;
         int temp2 = 2;
 
+        int my_ass = 42069;
+
         Scene scene = new Scene(root);
         stage.setTitle("SmartMacro v2.0");
         stage.setResizable(true);
