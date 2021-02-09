@@ -38,6 +38,7 @@ public class SmartMacro extends Application {
         Parent root = loader.load();
         c = loader.getController();
         int temp = 1;
+        int temp2 = 2;
 
         Scene scene = new Scene(root);
         stage.setTitle("SmartMacro v2.0");
