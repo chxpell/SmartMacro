@@ -37,6 +37,7 @@ public class SmartMacro extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLDocument.fxml"));
         Parent root = loader.load();
         c = loader.getController();
+        int temp = 1;
 
         Scene scene = new Scene(root);
         stage.setTitle("SmartMacro v2.0");
